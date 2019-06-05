@@ -9,7 +9,7 @@ from slackclient import SlackClient
 
 def post(sc):
     print sc.api_call(
-            "chat.postMessage", channel="#なぼへセクハラする", text="<@UHVGSGE9K> かわいいよなぼちゃん♡",
+            "chat.postMessage", channel="#なぼへXXXする", text="<@XXX> かわいいよなぼちゃん♡",
             username='りこたそ', icon_emoji=':なぼたん:'
             )
 
@@ -21,7 +21,7 @@ def post(sc):
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(9, GPIO.IN)
 before = 0
-token = "xoxp-508287033857-508889631426-649520981172-adb330630977492db44971b00fa1140d"
+token = "XXX"
 sc = SlackClient(token)
 
 now = GPIO.input(9)
