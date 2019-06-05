@@ -5,6 +5,7 @@ import time
 import signal
 import sys
 import random
+import ConfigParser
 from slackclient import SlackClient
 
 def post(sc):
@@ -21,7 +22,11 @@ def post(sc):
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(9, GPIO.IN)
 before = 0
-token = "XXX"
+
+config = ConfigParser.ConfigParser()
+config.read('config.ini')
+ 
+token = config.get('development', 'token')
 sc = SlackClient(token)
 
 now = GPIO.input(9)
