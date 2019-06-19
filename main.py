@@ -30,7 +30,7 @@ while True:
         	print(number)
         elif 13 <= number <= 18:
         	print("小豆島座席番号")
-            print(number)
+                print(number)
         elif 19 <= number <= 24:
         	print("佐渡島座席番号")
         	print(number)
