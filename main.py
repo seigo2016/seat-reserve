@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import RPi.GPIO as GPIO
 import time
-# import signal
+import signal
 import sys
 import random
 
